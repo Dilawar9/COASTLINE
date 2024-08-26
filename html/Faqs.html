@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Costline Build</title>
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="assets/images/fav-icon.svg" type="image/x-icon">
+  <!-- faremwork of css -->
+  <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+  <!-- style sheet of css -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Responsive sheet of css -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- fonts awsome icon link  -->
+  <link rel="stylesheet" href="assets/font-awesome-lib/icon/all.min.css">
+  <!-- slick-slider link css -->
+  <link rel="stylesheet" href="assets/css/slick.min.css">
+  <!-- animation of css -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <button id="scrollTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+    <!--  1.1. header section  -->
+    <header>
+      <nav class="container navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a href="index.html" class="nav-logo p-0">
+            <!-- <figure>
+              <img src="assets/images/pages-logo.svg" alt="logo">
+            </figure> -->
+            <figure>
+              <img src="assets/images/logo.svg" alt="logo">
+            </figure>
+          </a>
+          <!-- <div class="d-flex gap-4">
+            <div class="join-btn1 hover3"> Get Started</div>
+            <button class="open-aside" onclick="open_aside()" type="button">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div> -->
+          <button class="open-aside" onclick="open_aside()" type="button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul
+              class="navbar-nav d-flex justify-content-center align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Projects.html">Project</a>
+              </li>
+              <li class="dropdown">
+                <a class="nav-link" href="#">
+                  Pages<i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item active" href="Faqs.html">FAQ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Team.html">Team</a>
+                  </li>
+                  <li><a class="dropdown-item" href="Pricing.html">Pricing</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Testimonials.html">Testimonials</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="SinglePost.html">Single Post</a>
+                  </li>
+                  <li><a class="dropdown-item" href="Services.html">Services</a></li>
+                  <li><a class="dropdown-item" href="CommingSoon.html">Comming soon</a></li>
+                  <li><a class="dropdown-item" href="Error.html">404</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+            <div>
+              <button class="join-btn hover3">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- aside navigation slidebar -->
+      <aside>
+        <div id="mySidenav" class="right-sidbar">
+          <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
+            <figure class="navbar-brand">
+              <a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+            </figure>
+            <button class="fa-solid fa-xmark hover2 " onclick="close_aside()"></button>
+          </div>
+          <ul>
+            <li class="nav-item">
+              <a aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="Projects.html">Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <div class="d-flex align-items-center justify-content-between" id="slid-btn">
+                <button class="a-slid page-btn">Pages</button>
+                <i class="fa-solid fa-caret-down pe-2"></i>
+              </div>
+              <ul id="slid-drop">
+                <li><a class="active" href="Faqs.html">FAQs</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="SinglePost.html">Single Post</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="CommingSoon.html">Coming Soon</a></li>
+                <li><a href="Error.html">404</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </header>
+    <!--  End of 1.1. header section  -->
+    <!--    3.1. FAQ-Hero section  -->
+    <section class="FAQs_hero">
+      <div class="text-center">
+        <h1>FAQs</h1>
+      </div>
+    </section>
+    <!--  End of 3.1. FAQ  section  -->
+    <!--   3.2. Question  section  -->
+    <section class="FAQs_question">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <figure>
+                <img src="assets/images/index/FAQ1.png">
+              </figure>
+              <div class="d-flex align-items-center position-absolute">
+                <h1><span class="number" data-final-value="40"></span></h1>
+                <h3>Years of Experience</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex flex-column">
+              <div class="w-100">
+                <p>Find Your Answers</p>
+                <hr>
+              </div>
+              <h2 class="pb-2">The Most Common Questions</h2>
+              <p class="pb-5">
+                Lorem ipsum dolor sit amet consectetur. Donec ornare
+                ullamcorper in vulputate non egestas donec senectus. Sed
+                purus pellentesque sit nec nullam vel vel. Diam tincidunt
+                tristique faucibus mi in.
+              </p>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      What are the key steps in building construction?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec ornare
+                        ullamcorper in vulputate non egestas donec senectus. Sed
+                        purus pellentesque sit nec nullam vel vel. Diam tincidunt
+                        tristique faucibus mi in.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      How can I ensure safety on a construction site?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec ornare
+                        ullamcorper in vulputate non egestas donec senectus. Sed
+                        purus pellentesque sit nec nullam vel vel. Diam tincidunt
+                        tristique faucibus mi in.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      How do I select the right construction contractor for
+                      my project
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec ornare
+                        ullamcorper in vulputate non egestas donec senectus. Sed
+                        purus pellentesque sit nec nullam vel vel. Diam tincidunt
+                        tristique faucibus mi in.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      What types of construction projects do you do?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec ornare
+                        ullamcorper in vulputate non egestas donec senectus. Sed
+                        purus pellentesque sit nec nullam vel vel. Diam tincidunt
+                        tristique faucibus mi in.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      How will you keep me updated during construction?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec ornare
+                        ullamcorper in vulputate non egestas donec senectus. Sed
+                        purus pellentesque sit nec nullam vel vel. Diam tincidunt
+                        tristique faucibus mi in.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  End of 3.2. Question  section  -->
+    <!--   3.3. Your Answer  section  -->
+    <section class="FAQs_answer">
+      <div class="container">
+        <div class="text-center d-flex justify-content-center align-items-center flex-column">
+          <h1>Couldn’t Find Your Answer?Ask Us Questions!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Donec ornare ullamcorper
+            in vulputate non egestas donec senectus. Sed purus pellentesque
+            sit nec nullam vel vel.
+          </p>
+          <div class="mt-2">
+            <a href="#" class="hover1">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  End of 3.2. Your Answer  section  -->
+    <!--  footer section  -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="p-0 d-flex justify-content-between align-items-center">
+            <div>
+              <h3>Subscribe Our News Letter</h3>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut.
+              </p>
+            </div>
+            <div class="d-flex">
+              <form class="d-flex justify-content-center Subscribe-massage" action="#">
+                <input type="email" name="name" autocomplete="on" required placeholder="Type Your Email">
+                <button type="submit">Subscribe</button>
+              </form>
+              <div class="validation Succes-box"></div>
+            </div>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between p-0">
+            <div class="d-flex flex-column gap-3">
+              <a href="index.html">
+                <img src="assets/images/footer_Logo.svg" alt="logo">
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                In vitae turpis massa sed elementum
+              </p>
+            </div>
+            <div class="Footer_Links d-flex justify-content-evenly">
+              <ul class="d-flex flex-column justify-content-between ">
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="About.html">Our Mission</a></li>
+                <li><a href="Contact.html">Career</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+              </ul>
+              <hr>
+              <ul class="d-flex flex-column justify-content-between">
+                <li><a href="Contact.html">How it works</a></li>
+                <li><a href="Faqs.html">FAQs</a></li>
+                <li><a href="Team.html">Teams</a></li>
+                <li><a href="Blog.html">News & Blogs</a></li>
+              </ul>
+              <hr>
+              <ul class="d-flex flex-column justify-content-between">
+                <li><a href="Contact.html">Help Centre</a></li>
+                <li><a href="About.html">Privacy Policy</a></li>
+                <li><a href="About.html">Reviews</a></li>
+                <li><a href="Blog.html">News & Blogs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Copyright d-flex justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between">
+          <div class="d-flex gap-3">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="d-flex align-items-center">
+            <p class="w-100 text-center">
+              Copyright &copy 2023 Blogs & News By Evonicmedia. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  End of footer section  -->
+  </div>
+  <!-- bootstrap min javascript -->
+  <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+  <!-- j Query -->
+  <script src="assets/js/jquery.js"></script>
+  <!-- slick slider js -->
+  <script src="assets/js/slick.min.js"></script>
+  <!-- main javascript -->
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1500,
+    });
+  </script>
+</body>
+
+</html>

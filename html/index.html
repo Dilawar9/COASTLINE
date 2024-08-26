@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Costline Build</title>
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="assets/images/fav-icon.svg" type="image/x-icon">
+  <!-- faremwork of css -->
+  <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+  <!-- style sheet of css -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Responsive sheet of css -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- fonts awsome icon link  -->
+  <link rel="stylesheet" href="assets/font-awesome-lib/icon/all.min.css">
+  <!-- slick-slider link css -->
+  <link rel="stylesheet" href="assets/css/slick.min.css">
+  <!-- animation of css -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <button  id="scrollTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- 1.1. header section -->
+    <header>
+      <nav class="container navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a href="index.html" class="nav-logo p-0">
+            <figure>
+              <img src="assets/images/logo.svg" alt="logo">
+            </figure>
+          </a>
+          <!-- <div class="d-flex gap-4">
+            <div class="d-flex gap-4">
+              <div class="join-btn1 hover1"> Get Started</div>
+              <button class="open-aside" onclick="open_aside()" type="button">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </div> -->
+          <button class="open-aside" onclick="open_aside()" type="button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul
+              class="navbar-nav d-flex justify-content-center align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Projects.html">Project</a>
+              </li>
+              <li class="dropdown">
+                <a class="nav-link" href="#">
+                  Pages<i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Faqs.html">FAQ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Team.html">Team</a>
+                  </li>
+                  <li><a class="dropdown-item" href="Pricing.html">Pricing</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Testimonials.html">Testimonials</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="SinglePost.html">Single Post</a>
+                  </li>
+                  <li><a class="dropdown-item" href="Services.html">Services</a></li>
+                  <li><a class="dropdown-item" href="CommingSoon.html">Comming soon</a></li>
+                  <li><a class="dropdown-item" href="Error.html">404</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+            <div>
+              <button class="join-btn hover1">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- aside navigation slidebar-->
+      <aside>
+        <div id="mySidenav" class="right-sidbar">
+          <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
+            <figure class="navbar-brand">
+              <a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+            </figure>
+            <button class="fa-solid fa-xmark hover2 " onclick="close_aside()"></button>
+          </div>
+          <ul>
+            <li class="nav-item ">
+              <a class="active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="Projects.html">Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <div class="d-flex align-items-center justify-content-between" id="slid-btn">
+                <button class="a-slid page-btn">Pages</button>
+                <i class="fa-solid fa-caret-down pe-2"></i>
+              </div>
+              <ul id="slid-drop">
+                <li><a href="Faqs.html">FAQs</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="SinglePost.html">Single Post</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="CommingSoon.html">Coming Soon</a></li>
+                <li><a href="Error.html">404</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </header>
+    <!-- End of 1.1. header section  -->
+    <!-- 1.2. Hero section  -->
+    <section class="Hero">
+      <div class="container">
+        <div class="text-center d-flex justify-content-center align-items-center flex-column gap-lg-4">
+          <h1>Designing Inspiring Spaces for Success</h1>
+          <div class="mt-2">
+            <a href="#" class="hover1">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of  1.2. Hero section-->
+
+    <!-- 1.3. About section -->
+    <section class="About">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <div class="position-relative h-100 ">
+              <figure class="position-relative d-flex justify-content-center h-100 ">
+                <img src="assets/images/index/about-left.png" alt="about_img">
+                <div class="d-flex w-100  position-absolute justify-content-center gap-3">
+                  <div class="text-center d-flex align-items-center flex-column justify-content-center">
+                    <h1>
+                      <span class="number" data-final-value="40"></span>
+                    </h1>
+                    <p>Years of Experience</p>
+                  </div>
+                  <div class=" text-center d-flex align-items-center flex-column justify-content-center">
+                    <h1>
+                      <span class="number" data-final-value="685"></span>
+                    </h1>
+                    <p>Completed Project</p>
+                  </div>
+                </div>
+              </figure>
+              <div class="vertical">
+                <p>About Our Company</p>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-6">
+            <div class="d-flex flex-column gap-4 ">
+              <div>
+                <p>Introduction</p>
+                <hr>
+              </div>
+              <h2>About Company</h2>
+              <p class="pb-3">
+                Lorem ipsum dolor sit amet consectetur. Donec ornare
+                ullamcorper in vulputate non egestas donec senectus. Sed
+                purus pellentesque sit nec nullam vel vel. Diam tincidunt
+                tristique faucibus mi in. Aliquam eu malesuada dignissim
+                vitae dui sit vitae. Sed pharetra enim ut fringilla turpis
+                pulvinar. Porta amet fermentum nibh ipsum elit ut neque
+                nulla. Aliquam faucibus ultrices consectetur nibh lectus
+                magnis cras nec odio.
+              </p>
+              <div class="d-flex justify-content-center  pb-4">
+                <div>
+                  <h5><span class="d-flex justify-content-center align-items-center ">01</span></h5>
+                  <h5>Affordable Price</h5>
+                  <p class="pt-1">
+                    Lorem ipsum dolor sit amet consectetur. Donec ornare
+                    ullamcorper.
+                  </p>
+                </div>
+                <hr>
+                <div>
+                  <h5><span class="d-flex justify-content-center align-items-center ">02</span></h5>
+                  <h5>Experienced Team</h5>
+                  <p class="pt-1">
+                    Lorem ipsum dolor sit amet consectetur. Donec ornare
+                    ullamcorper.
+                  </p>
+                </div>
+                <hr>
+                <div>
+                  <h5><span class="d-flex justify-content-center align-items-center ">03</span></h5>
+                  <h5>Safe and Trusted</h5>
+                  <p class="pt-1">
+                    Lorem ipsum dolor sit amet consectetur. Donec ornare
+                    ullamcorper.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <a href="#" class="hover1">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of  1.3. About section-->
+
+    <!--1.4. Partners section -->
+    <section class="Partners">
+      <div class="container">
+        <h4>Our Industrial Partners</h4>
+        <div class="Partners_Slider d-flex justify-content-between gap-2">
+          <div class="d-flex justify-content-between ">
+            <a href="#"><img src="assets/images/index/partner1.svg" alt="logo1"></a>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <a href="#"><img src="assets/images/index/partner2.svg" alt="logo2"></a>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <a href="#"><img src="assets/images/index/partner3.svg" alt="logo3"></a>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <a href="#"><img src="assets/images/index/partner4.svg" alt="logo2"></a>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <a href="#"><img src="assets/images/index/partner5.svg" alt="logo2"></a>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <a href="#"><img src="assets/images/index/partner6.svg" alt="logo3"></a>
+          </div>
+          <div class="d-flex justify-content-between ">
+            <a href="#"><img src="assets/images/index/partner3.svg" alt="logo1"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of  1.4. Partners section -->
+
+    <!--1.5. Company section -->
+    <section class="Company">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="d-flex flex-column h-100 ">
+              <div class="d-flex gap-2 align-items-center">
+                <div class="Guide-video">
+                  <a class="video-play-button" href="#">
+                    <span class="fa-solid fa-play"></span>
+                  </a>
+                </div>
+                <p class="text-uppercase">Play Video</p>
+              </div>
+              <h3 class="pt-4 ">
+                Unique design solutions. Reconstruction and renovation of
+                buildings
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Donec ornare
+                ullamcorper in vulputate non egestas donec senectus. Sed purus
+                pellentesque sit nec nullam vel vel. Diam tincidunt tristique
+                faucibus mi in. Aliquam eu malesuada dignissim vitae dui sit
+                vitae. Sed pharetra enim ut fringilla turpis pulvinar. Porta
+                amet fermentum nibh ipsum elit ut neque nulla. Aliquam
+                faucibus ultrices consectetur nibh lectus magnis cras nec
+                odio.
+              </p>
+              <p>
+                Eget at posuere iaculis viverra a. Pretium nunc ultricies ac
+                purus nunc in platea quam. Sit suspendisse et venenatis ut in
+                ultricies.
+              </p>
+              <div>
+                <a href="#" class="hover1">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="position-relative d-flex h-100 align-items-end">
+              <div class="Company_Slider w-100 ">
+                <figure class="d-flex align-items-center justify-content-center">
+                  <img src="assets/images/index/company-slider.png">
+                </figure>
+                <figure class="d-flex align-items-center justify-content-center">
+                  <img src="assets/images/index/company-slider2.jpg">
+                </figure>
+                <figure class="d-flex align-items-center justify-content-center">
+                  <img src="assets/images/index/company-slider3.jpg">
+                </figure>
+              </div>
+              <div class="vertical">
+                <p>About Our Company</p>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of  1.5. Company section-->
+
+    <!--1.6. Services section-->
+    <section class="Services">
+      <div class="container">
+        <div class="d-flex flex-column px-4 ">
+          <div>
+            <p>What We Offer</p>
+            <hr>
+          </div>
+          <div class="d-flex justify-content-between align-items-center pb-4 ">
+            <h2>We Are Careful At Every Step</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Donec ornare ullamcorper
+              in vulputate non egestas donec senectus. Sed purus pellentesque
+              sit nec nullam vel vel. Diam tincidunt tristique faucibus mi in.
+            </p>
+          </div>
+        </div>
+        <div class="position-relative">
+          <div class="row Services_Slider">
+            <div class="col-lg-4">
+              <div class="position-relative">
+                <figure>
+                  <img src="assets/images/index/servis-slider3.png">
+                </figure>
+                <div class="d-flex p-3 justify-content-between align-items-center position-absolute">
+                  <h4>Commercial Architecture Design & Planning</h4>
+                  <a href="#">
+                    <div class="d-flex align-items-center justify-content-center">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="position-relative ">
+                <figure>
+                  <img src="assets/images/index/servis-slider2.png">
+                </figure>
+                <div class="d-flex p-3 justify-content-between align-items-center position-absolute">
+                  <h4>renovation and restoration</h4>
+                  <a href="#">
+                    <div class="d-flex align-items-center justify-content-center">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="position-relative ">
+                <figure>
+                  <img src="assets/images/index/servis-slider1.png">
+                </figure>
+                <div class="d-flex p-3 justify-content-between align-items-center position-absolute">
+                  <h4>Infrastructure & installations</h4>
+                  <a href="#">
+                    <div class="d-flex align-items-center justify-content-center">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="position-relative ">
+                <figure>
+                  <img src="assets/images/index/services-10-6.png">
+                </figure>
+                <div class="d-flex p-3 justify-content-between align-items-center position-absolute">
+                  <h4>renovation and restoration</h4>
+                  <a href="#">
+                    <div class="d-flex align-items-center justify-content-center">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vertical">
+            <p>Our Services</p>
+            <hr>
+          </div>
+        </div>
+    </section>
+    <!--End of  1.6. Services section-->
+
+    <!--1.7.  Projects section-->
+    <section class="Projects ">
+      <div class="d-flex align-items-center flex-column justify-content-center">
+        <div class="w-100">
+          <div class="container">
+            <div class="text-center d-flex justify-content-center align-items-center flex-column gap-lg-3 w-100">
+              <h2>Recent Projects</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Donec ornare ullamcorper
+                in vulputate non egestas donec senectus. Sed purus pellentesque
+                sit nec nullam vel vel. Diam tincidunt tristique faucibus mi in.
+              </p>
+            </div>
+          </div>
+          <div class="Project_tabs d-flex w-100">
+            <h3 class="tab active_Tab" onclick="switchTab(0)">Industrial</h3>
+            <h3 class="tab" onclick="switchTab(1)">Residential</h3>
+            <h3 class="tab" onclick="switchTab(2)">Reconstruct</h3>
+            <h3 class="tab" onclick="switchTab(3)">Mega Projects</h3>
+          </div>
+        </div>
+        <div class="tab-content d-flex justify-content-center align-items-center ">
+          <div class="tab-pane">
+            <div class="d-flex flex-column">
+              <img src="assets/images/index/project1.png" alt="project1">
+              <img src="assets/images/index/project2.png" alt="project1">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="tab_center d-flex justify-content-between w-100 ">
+                <img src="assets/images/index/peoject3.png" alt="project1">
+                <img src="assets/images/index/project4.png" alt="project4">
+              </div>
+              <div>
+                <img src="assets/images/index/project5.png" alt="project1">
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <img src="assets/images/index/project6.png" alt="project1">
+              <img src="assets/images/index/project7.png" alt="project1">
+            </div>
+          </div>
+          <div class="tab-pane">
+            <div class="d-flex flex-column">
+              <img src="assets/images/index/project2.png" alt="project1">
+              <img src="assets/images/index/project1.png" alt="project1">
+            </div>
+            <div class="d-flex flex-column">
+              <div>
+                <img src="assets/images/index/project5.png" alt="project1">
+              </div>
+              <div class="tab_center d-flex justify-content-between w-100 ">
+                <img src="assets/images/index/peoject3.png" alt="project1">
+                <img src="assets/images/index/project4.png" alt="project4">
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <img src="assets/images/index/project7.png" alt="project1">
+              <img src="assets/images/index/project6.png" alt="project1">
+            </div>
+          </div>
+          <div class="tab-pane">
+            <div class="d-flex flex-column">
+              <img src="assets/images/index/project1.png" alt="project1">
+              <img src="assets/images/index/project2.png" alt="project1">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="tab_center d-flex justify-content-between w-100 ">
+                <img src="assets/images/index/peoject3.png" alt="project1">
+                <img src="assets/images/index/project4.png" alt="project4">
+              </div>
+              <div>
+                <img src="assets/images/index/project5.png" alt="project1">
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <img src="assets/images/index/project6.png" alt="project1">
+              <img src="assets/images/index/project7.png" alt="project1">
+            </div>
+          </div>
+          <div class="tab-pane">
+            <div class="d-flex flex-column">
+              <img src="assets/images/index/project6.png" alt="project1">
+              <img src="assets/images/index/project7.png" alt="project1">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="tab_center d-flex justify-content-between w-100 ">
+                <img src="assets/images/index/peoject3.png" alt="project1">
+                <img src="assets/images/index/project4.png" alt="project4">
+              </div>
+              <div>
+                <img src="assets/images/index/project5.png" alt="project1">
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <img src="assets/images/index/project1.png" alt="project1">
+              <img src="assets/images/index/project2.png" alt="project1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of  1.7. Projects section-->
+
+    <!--1.8. Feature section-->
+    <section class="Feature">
+      <div class="container">
+        <div class="d-flex flex-column ">
+          <div>
+            <p>Constructed Projects</p>
+            <hr>
+          </div>
+          <div class="d-flex justify-content-between align-items-center pt-2">
+            <h2>Building trust through excellence</h2>
+            <div>
+              <h4 class="pb-2">Our best features</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Donec ornare ullamcorper
+                in vulputate non egestas donec senectus. Sed purus pellentesque
+                sit nec nullam vel vel. Diam tincidunt tristique faucibus mi in.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="d-flex flex-wrap justify-content-between gap-4">
+              <div class="d-flex flex-column  align-items-center text-center ">
+                <figure class="d-flex align-items-center justify-content-center">
+                  <img src="assets/images/icons/construct-bg3.svg" alt="icon1">
+                </figure>
+                <h4>Expertise in Every Detail</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Donec ornare
+                  ullamcorper in vulputate non egestas donec senectus.
+                </p>
+              </div>
+              <div class="d-flex flex-column  align-items-center text-center ">
+                <figure class="d-flex align-items-center justify-content-center">
+                  <img src="assets/images/icons/construct-bg2.svg" alt="icon2">
+                </figure>
+                <h4>Innovation at the Core</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Donec ornare
+                  ullamcorper in vulputate non egestas donec senectus.
+                </p>
+              </div>
+              <div class="d-flex flex-column align-items-center text-center ">
+                <figure class="d-flex align-items-center justify-content-center">
+                  <img src="assets/images/icons/construct-bg1.svg" alt="icon3">
+                </figure>
+                <h4>Customer-Centric Approach</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Donec ornare
+                  ullamcorper in vulputate non egestas donec senectus.
+                </p>
+              </div>
+              <div class="d-flex flex-column  align-items-center text-center">
+                <figure class="d-flex align-items-center justify-content-center">
+                  <img src="assets/images/icons/construct-bg4.svg" alt="icon4">
+                </figure>
+                <h4>Quality Materials</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Donec ornare
+                  ullamcorper in vulputate non egestas donec senectus.
+                </p>
+              </div>
+              <div class="d-flex align-items-end position-relative">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Donec ornare ullamcorper
+                  in vulputate non egestas donec senectus. Sed purus pellentesque
+                  sit nec nullam vel vel. Diam tincidunt tristique faucibus mi in.
+                </p>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="position-relative">
+              <figure>
+                <img src="assets/images/index/construct-right.png" alt="feautreimage">
+              </figure>
+              <div class="vertical">
+                <p>Our Best Features</p>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of  1.8. Feature section-->
+
+    <!--1.9. Begin  section-->
+    <section class="Begin">
+      <div class="container">
+        <div class="text-center d-flex  align-items-center flex-column">
+          <h2>
+            Transform Ideas into Structures. Begin Your Project Today!
+          </h2>
+          <div class="mt-2">
+            <a href="#" class="hover1">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of  1.9. Begin section-->
+
+    <!--1.10. Stats section-->
+    <section class="Stats">
+      <div class="container">
+        <div class="text-center">
+          <h2>We are in Numbers</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Donec ornare ullamcorper
+            in vulputate non egestas donec senectus. Sed purus pellentesque
+            sit nec nullam vel vel. Diam tincidunt tristique faucibus mi in.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 ">
+            <div class="d-flex align-items-center justify-content-center">
+              <figure>
+                <img src="assets/images/icons/Group 1.png">
+              </figure>
+              <div>
+                <h2>
+                  <span class="number" data-final-value="40"></span>+
+                </h2>
+                <p>Years of Experience</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="d-flex align-items-center justify-content-center">
+              <figure>
+                <img src="assets/images/icons/stats-icon2.svg">
+              </figure>
+              <div>
+                <h2>
+                  <span class="number" data-final-value="258"></span>+
+                </h2>
+                <p>Satisfy Customers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 ">
+            <div class="d-flex align-items-center justify-content-center">
+              <figure>
+                <img src="assets/images/icons/stats-icon3.svg">
+              </figure>
+              <div>
+                <h2>
+                  <span class="number" data-final-value="100"></span>+
+                </h2>
+                <p>Expert Engineers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 ">
+            <div class="d-flex align-items-center justify-content-center">
+              <figure>
+                <img src="assets/images/icons/stats-icon4.svg">
+              </figure>
+              <div>
+                <h2>
+                  <span class="number" data-final-value="87"></span>+
+                  </h1>
+                  <p>Awards Wining</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of  1.10. Stats section-->
+
+    <!--1.11. Testimonials section-->
+    <section class="Testimonials">
+      <div class="container">
+        <div class="d-flex flex-column gap-lg-2 mb-5">
+          <p>Testimonials</p>
+          <div class="d-flex flex-lg-row flex-md-row flex-column">
+            <h2 class="w-100 ">What Our Client Says</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Donec ornare ullamcorper
+              in vulputate non egestas donec senectus. Sed purus pellentesque
+              sit nec nullam vel vel. Diam tincidunt tristique faucibus mi in.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-8 position-relative">
+            <figure class="position-absolute d-flex align-items-center  ">
+              <img src="assets/images/index/test-04-large.jpg" alt="user1" onclick="currentSlide(1)">
+              <img src="assets/images/index/test-03-large.jpg" alt="user4" onclick="currentSlide(4)">
+              <img src="assets/images/index/test-02-large.jpg" alt="user3" onclick="currentSlide(3)">
+              <img src="assets/images/index/testimonial_Imag-4.png" alt="user2" onclick="currentSlide(2)">
+            </figure>
+            <hr>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="slideshow-container">
+              <div class="mySlides flex-column">
+                <div class="d-flex gap-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Nunc risus
+                  pellentesque vehicula enim aenean aliquam. Ac quam enim
+                  feugiat nam. Adipiscing vel sed aliquam enim et pretium
+                  aliquam mattis nulla. Nunc faucibus id lorem. Lorem ipsum
+                  dolor sit amet consectetur. Nunc risus pellentesque vehicula
+                  enim aenean aliquam. Ac quam enim feugiat nam. Adipiscing
+                  vel sed aliquam enim et pretium aliquam mattis nulla. Nunc
+                  faucibus id lorem.
+                </p>
+                <p>
+                  Ac quam enim feugiat nam. Adipiscing vel sed aliquam enim et
+                  pretium aliquam mattis nulla. Nunc faucibus id lorem.
+                </p>
+                <div>
+                  <div>
+                    <h4>Indra Muliana</h4>
+                    <p>Graphic Designer</p>
+                  </div>
+                  <div class="Testimonial_slideBtn d-flex ">
+                    <button class="prev" onclick="plusSlides()">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="next" onclick="minusSlides()">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="mySlides flex-column ">
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Nunc risus
+                  pellentesque vehicula enim aenean aliquam. Ac quam enim
+                  feugiat nam. Adipiscing vel sed aliquam enim et pretium
+                  aliquam mattis nulla. Nunc faucibus id lorem. Lorem ipsum
+                  dolor sit amet consectetur. Nunc risus pellentesque vehicula
+                  enim aenean aliquam. Ac quam enim feugiat nam. Adipiscing
+                  vel sed aliquam enim et pretium aliquam mattis nulla. Nunc
+                  faucibus id lorem.
+                </p>
+                <p class="pt-3">
+                  Ac quam enim feugiat nam. Adipiscing vel sed aliquam enim et
+                  pretium aliquam mattis nulla. Nunc faucibus id lorem.
+                </p>
+                <div>
+                  <div>
+                    <h4>Richard Thompson</h4>
+                    <p>Web Developer</p>
+                  </div>
+                  <div class="Testimonial_slideBtn d-flex ">
+                    <button class="prev" onclick="plusSlides()">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="next" onclick="minusSlides()">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="mySlides flex-column ">
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Nunc risus
+                  pellentesque vehicula enim aenean aliquam. Ac quam enim
+                  feugiat nam. Adipiscing vel sed aliquam enim et pretium
+                  aliquam mattis nulla. Nunc faucibus id lorem. Lorem ipsum
+                  dolor sit amet consectetur. Nunc risus pellentesque vehicula
+                  enim aenean aliquam. Ac quam enim feugiat nam. Adipiscing
+                  vel sed aliquam enim et pretium aliquam mattis nulla. Nunc
+                  faucibus id lorem.
+                </p>
+                <p class="pt-3">
+                  Ac quam enim feugiat nam. Adipiscing vel sed aliquam enim et
+                  pretium aliquam mattis nulla. Nunc faucibus id lorem.
+                </p>
+                <div>
+                  <div>
+                    <h4>Jessica Anderson</h4>
+                    <p>Backend Developer</p>
+                  </div>
+                  <div class="Testimonial_slideBtn d-flex ">
+                    <button class="prev" onclick="plusSlides()">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="next" onclick="minusSlides()">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="mySlides flex-column ">
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Nunc risus
+                  pellentesque vehicula enim aenean aliquam. Ac quam enim
+                  feugiat nam. Adipiscing vel sed aliquam enim et pretium
+                  aliquam mattis nulla. Nunc faucibus id lorem. Lorem ipsum
+                  dolor sit amet consectetur. Nunc risus pellentesque vehicula
+                  enim aenean aliquam. Ac quam enim feugiat nam. Adipiscing
+                  vel sed aliquam enim et pretium aliquam mattis nulla. Nunc
+                  faucibus id lorem.
+                </p>
+                <p class="pt-3">
+                  Ac quam enim feugiat nam. Adipiscing vel sed aliquam enim et
+                  pretium aliquam mattis nulla. Nunc faucibus id lorem.
+                </p>
+                <div>
+                  <div>
+                    <h4>Michael Carter</h4>
+                    <p>Quality Assurance</p>
+                  </div>
+                  <div class="Testimonial_slideBtn d-flex ">
+                    <button class="prev" onclick="plusSlides()">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="next" onclick="minusSlides()">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of 1.11. Testimonials section-->
+
+    <!--1.12. Blog  section-->
+    <section class="Blog">
+      <div class="container">
+        <div class="d-flex flex-column px-4">
+          <div>
+            <p>Constructed Projects</p>
+            <hr>
+          </div>
+          <div class="d-flex justify-content-between align-items-center gap-4">
+            <h2>Building trust through excellence</h2>
+            <div class="d-flex flex-column gap-5 ">
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Donec ornare ullamcorper
+                in vulputate non egestas donec senectus. Sed purus pellentesque
+                sit nec nullam vel vel. Diam tincidunt tristique faucibus mi in.
+              </p>
+              <div>
+                <a href="#" class="hover1">Read All</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-lg-0 gy-4">
+          <div class="col-lg-6 col-md-6">
+            <div class="position-relative">
+              <figure class="position-relative">
+                <img src="assets/images/index/blog3.png">
+                <div class="w-100 d-flex justify-content-between align-items-center position-absolute">
+                  <div>
+                    <h4>Good Practices & Ideas For Construction Project</h4>
+                    <p>Aug 17,2024</p>
+                    <p>Construction</p>
+                  </div>
+                  <a href="#">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </a>
+                </div>
+              </figure>
+              <div class="vertical">
+                <p>Our Blogs & News</p>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="d-flex flex-column  justify-content-between h-100">
+              <figure class="position-relative ">
+                <img src="assets/images/index/blog2.png">
+                <div class="w-100 d-flex justify-content-between align-items-center position-absolute">
+                  <div>
+                    <h4>Discussion About Projects With Our Teammates</h4>
+                    <p>Aug 17,2024</p>
+                    <p>Construction</p>
+                  </div>
+                  <a href="#">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </a>
+                </div>
+              </figure>
+              <figure class="position-relative">
+                <img src="assets/images/index/blog1.png">
+                <div class="w-100 d-flex justify-content-between align-items-center position-absolute">
+                  <div>
+                    <h4>We Are Best In Engineering & Construction Project</h4>
+                    <p>Aug 17,2024</p>
+                    <p>Construction</p>
+                  </div>
+                  <a href="#">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </a>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of  1.12. Blog section-->
+
+    <!--footer section-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="p-0 d-flex justify-content-between align-items-center">
+            <div>
+              <h3>Subscribe Our News Letter</h3>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut.
+              </p>
+            </div>
+            <div class="d-flex">
+              <form class="d-flex justify-content-center Subscribe-massage" action="#" >
+                <input type="email" name="email" autocomplete="on"  required  placeholder="Type Your Email">
+                <button type="submit">Subscribe</button>
+              </form>
+              <div class="validation Succes-box"></div>
+            </div>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between p-0">
+            <div class="d-flex flex-column gap-3">
+              <a href="index.html">
+                <img src="assets/images/footer_Logo.svg" alt="logo">
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                In vitae turpis massa sed elementum
+              </p>
+            </div>
+            <div class="Footer_Links d-flex justify-content-evenly">
+              <ul class="d-flex flex-column justify-content-between ">
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="About.html">Our Mission</a></li>
+                <li><a href="Contact.html">Career</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+              </ul>
+              <hr>
+              <ul class="d-flex flex-column justify-content-between">
+                <li><a href="Contact.html">How it works</a></li>
+                <li><a href="Faqs.html">FAQs</a></li>
+                <li><a href="Team.html">Teams</a></li>
+                <li><a href="Blog.html">News & Blogs</a></li>
+              </ul>
+              <hr>
+              <ul class="d-flex flex-column justify-content-between">
+                <li><a href="Contact.html">Help Centre</a></li>
+                <li><a href="About.html">Privacy Policy</a></li>
+                <li><a href="About.html">Reviews</a></li>
+                <li><a href="Blog.html">News & Blogs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Copyright d-flex justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between">
+          <div class="d-flex gap-3">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+             <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="d-flex align-items-center">
+            <p class="w-100 text-center">
+              Copyright &copy 2023 Blogs & News By Evonicmedia. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End of footer section-->
+  </div>
+  <!-- bootstrap min javascript -->
+  <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+  <!-- j Query -->
+  <script src="assets/js/jquery.js"></script>
+  <!-- slick slider js -->
+  <script src="assets/js/slick.min.js"></script>
+  <!-- main javascript -->
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1500,
+    });
+  </script>
+</body>
+
+</html>

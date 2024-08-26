@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Costline Build</title>  
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="assets/images/fav-icon.svg" type="image/x-icon">
+  <!-- faremwork of css -->
+  <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+  <!-- style sheet of css -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Responsive sheet of css -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- fonts awsome icon link  -->
+  <link rel="stylesheet" href="assets/font-awesome-lib/icon/all.min.css">
+  <!-- slick-slider link css -->
+  <link rel="stylesheet" href="assets/css/slick.min.css">
+  <!-- animation of css -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <button  id="scrollTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+    <!--  1.1. header section  -->
+    <header>
+      <nav class="container navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a href="index.html" class="nav-logo p-0">
+            <!-- <figure>
+              <img src="assets/images/pages-logo.svg" alt="logo">
+            </figure> -->
+            <figure>
+              <img src="assets/images/logo.svg" alt="logo">
+            </figure>
+          </a>
+          <!-- <div class="d-flex gap-4">
+            <div class="join-btn1 hover3"> Get Started</div>
+            <button class="open-aside" onclick="open_aside()" type="button">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div> -->
+          <button class="open-aside" onclick="open_aside()" type="button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul
+              class="navbar-nav d-flex justify-content-center align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Projects.html">Project</a>
+              </li>
+              <li class="dropdown">
+                <a class="nav-link" href="#">
+                  Pages<i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Faqs.html">FAQ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Team.html">Team</a>
+                  </li>
+                  <li><a class="dropdown-item" href="Pricing.html">Pricing</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Testimonials.html">Testimonials</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="SinglePost.html">Single Post</a>
+                  </li>
+                  <li><a class="dropdown-item active" href="Services.html">Services</a></li>
+                  <li><a class="dropdown-item" href="CommingSoon.html">Comming soon</a></li>
+                  <li><a class="dropdown-item" href="Error.html">404</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+            <div>
+              <button class="join-btn hover3">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- aside navigation slidebar -->
+      <aside>
+        <div id="mySidenav" class="right-sidbar">
+          <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
+            <figure class="navbar-brand">
+              <a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+            </figure>
+            <button class="fa-solid fa-xmark hover2 " onclick="close_aside()"></button>
+          </div>
+          <ul>
+            <li class="nav-item">
+              <a aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="Projects.html">Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <div class="d-flex align-items-center justify-content-between" id="slid-btn">
+                <button class="a-slid page-btn">Pages</button>
+                <i class="fa-solid fa-caret-down pe-2"></i>
+              </div>
+              <ul id="slid-drop">
+                <li><a href="Faqs.html">FAQs</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="SinglePost.html">Single Post</a></li>
+                <li><a class="active" href="Services.html">Services</a></li>
+                <li><a href="CommingSoon.html">Coming Soon</a></li>
+                <li><a href="Error.html">404</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </header>
+    <!--  End of 1.1. header section  -->
+    <!--    10.1. Services-Hero section  -->
+    <section class="Services_hero">
+      <div class="text-center">
+        <h1>Services</h1>
+      </div>
+    </section>
+    <!--  End of 10.1. Services-Hero section  -->
+    <!--   10.2. Services-offers  section  -->
+    <section class="Services_offers">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center text-center ">
+          <div>
+            <p>What We Offer</p>
+            <hr>
+          </div>
+          <h2>We are careful at every step</h2>
+          <p>Lorem ipsum dolor sit amet consectetur. Donec ornare ullamcorper in vulputate non egestas donec senectus.
+            Sed purus pellentesque sit nec nullam vel vel. Diam tincidunt tristique faucibus mi in. </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 ">
+            <figure class="position-relative">
+              <img class="w-100" src="assets/images/index/services-10-1.png" alt="">
+              <div class="d-flex align-items-center position-absolute justify-content-between">
+                <h4>Commercial Architecture Design & Planning</h4>
+                <a href="#">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </a>
+              </div>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <figure class="position-relative ">
+              <img class="w-100" src="assets/images/index/services-10 -2.png" alt="">
+              <div class="d-flex align-items-center position-absolute justify-content-between">
+                <h4>renovation and restoration</h4>
+                <a href="#">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </a>
+              </div>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <figure class="position-relative">
+              <img class="w-100" src="assets/images/index/services-10-3.png" alt="">
+              <div class="d-flex align-items-center position-absolute justify-content-between">
+                <h4>Infrastructure & installations</h4>
+                <a href="#">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </a>
+              </div>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <figure class="position-relative">
+              <img class="w-100" src="assets/images/index/services-10-4.png" alt="">
+              <div class="d-flex align-items-center position-absolute justify-content-between">
+                <h4>Effective Project Management</h4>
+                <a href="#">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </a>
+              </div>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <figure class="position-relative">
+              <img class="w-100" src="assets/images/index/services-10-5.png" alt="">
+              <div class="d-flex align-items-center position-absolute justify-content-between">
+                <h4>Quality Assurance and Inspections</h4>
+                <a href="#">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </a>
+              </div>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <figure class="position-relative">
+              <img class="w-100" src="assets/images/index/services-10-6.png" alt="">
+              <div class="d-flex align-items-center position-absolute justify-content-between">
+                <h4>Interior Design and Finishing</h4>
+                <a href="#">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </a>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  End of 10.2. Services-offers section  -->
+    <!--  footer section  -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="p-0 d-flex justify-content-between align-items-center">
+            <div>
+              <h3>Subscribe Our News Letter</h3>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut.
+              </p>
+            </div>
+            <div class="d-flex">
+              <form class="d-flex justify-content-center Subscribe-massage" action="#">
+                <input type="email" name="name" autocomplete="on" required placeholder="Type Your Email">
+                <button type="submit">Subscribe</button>
+              </form>
+              <div class="validation Succes-box"></div>
+            </div>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between p-0">
+            <div class="d-flex flex-column gap-3">
+              <a href="index.html">
+                <img src="assets/images/footer_Logo.svg" alt="logo">
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                In vitae turpis massa sed elementum
+              </p>
+            </div>
+            <div class="Footer_Links d-flex justify-content-evenly">
+              <ul class="d-flex flex-column justify-content-between ">
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="About.html">Our Mission</a></li>
+                <li><a href="Contact.html">Career</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+              </ul>
+              <hr>
+              <ul class="d-flex flex-column justify-content-between">
+                <li><a href="Contact.html">How it works</a></li>
+                <li><a href="Faqs.html">FAQs</a></li>
+                <li><a href="Team.html">Teams</a></li>
+                <li><a href="Blog.html">News & Blogs</a></li>
+              </ul>
+              <hr>
+              <ul class="d-flex flex-column justify-content-between">
+                <li><a href="Contact.html">Help Centre</a></li>
+                <li><a href="About.html">Privacy Policy</a></li>
+                <li><a href="About.html">Reviews</a></li>
+                <li><a href="Blog.html">News & Blogs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Copyright d-flex justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between">
+          <div class="d-flex gap-3">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="d-flex align-items-center">
+            <p class="w-100 text-center">
+              Copyright &copy 2023 Blogs & News By Evonicmedia. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  End of footer section  -->
+  </div>
+  <!-- bootstrap min javascript -->
+  <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+  <!-- j Query -->
+  <script src="assets/js/jquery.js"></script>
+  <!-- slick slider js -->
+  <script src="assets/js/slick.min.js"></script>
+  <!-- main javascript -->
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1500,
+    });
+  </script>
+</body>
+
+</html>

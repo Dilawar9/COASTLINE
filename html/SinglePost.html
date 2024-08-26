@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Costline Build</title> 
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="assets/images/fav-icon.svg" type="image/x-icon">
+  <!-- faremwork of css -->
+  <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+  <!-- style sheet of css -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Responsive sheet of css -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- fonts awsome icon link  -->
+  <link rel="stylesheet" href="assets/font-awesome-lib/icon/all.min.css">
+  <!-- slick-slider link css -->
+  <link rel="stylesheet" href="assets/css/slick.min.css">
+  <!-- animation of css -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <button  id="scrollTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+    <!--  1.1. header section  -->
+    <header>
+      <nav class="container navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a href="index.html" class="nav-logo p-0">
+            <!-- <figure>
+              <img src="assets/images/pages-logo.svg" alt="logo">
+            </figure> -->
+            <figure>
+              <img src="assets/images/logo.svg" alt="logo">
+            </figure>
+          </a>
+          <!-- <div class="d-flex gap-4">
+            <div class="join-btn1 hover3"> Get Started</div>
+            <button class="open-aside" onclick="open_aside()" type="button">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div> -->
+          <button class="open-aside" onclick="open_aside()" type="button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul
+              class="navbar-nav d-flex justify-content-center align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Projects.html">Project</a>
+              </li>
+              <li class="dropdown">
+                <a class="nav-link" href="#">
+                  Pages<i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Faqs.html">FAQ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Team.html">Team</a>
+                  </li>
+                  <li><a class="dropdown-item" href="Pricing.html">Pricing</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Testimonials.html">Testimonials</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item active" href="SinglePost.html">Single Post</a>
+                  </li>
+                  <li><a class="dropdown-item" href="Services.html">Services</a></li>
+                  <li><a class="dropdown-item" href="CommingSoon.html">Comming soon</a></li>
+                  <li><a class="dropdown-item" href="Error.html">404</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+            <div>
+              <button class="join-btn hover3">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- aside navigation slidebar -->
+      <aside>
+        <div id="mySidenav" class="right-sidbar">
+          <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
+            <figure class="navbar-brand">
+              <a href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+            </figure>
+            <button class="fa-solid fa-xmark hover2 " onclick="close_aside()"></button>
+          </div>
+          <ul>
+            <li class="nav-item">
+              <a aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="Projects.html">Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <div class="d-flex align-items-center justify-content-between" id="slid-btn">
+                <button class="a-slid page-btn">Pages</button>
+                <i class="fa-solid fa-caret-down pe-2"></i>
+              </div>
+              <ul id="slid-drop">
+                <li><a href="Faqs.html">FAQs</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a class="active" href="SinglePost.html">Single Post</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="CommingSoon.html">Coming Soon</a></li>
+                <li><a href="Error.html">404</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </header>
+    <!--  End of 1.1. header section  -->
+    <!--    9.1. Post-Hero section  -->
+    <section class="Post_hero">
+      <div class="text-center">
+        <h2>A Guide to Streamlining Your Business</h2>
+      </div>
+    </section>
+    <!--  End of 9.1. Post-Hero section  -->
+    <!--   9.2. Post-latest  section  -->
+    <section class="Post_Latest">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-5 ">
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex align-items-center justify-content-center position-relative ">
+                <input type="text" name="search" autocomplete="search" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <form  class="Subscribe-massage" action="#">
+                <h4>Subscribe our newsletter to get updated information.</h4>
+                <input type="text" name="name" autofocus autocomplete="on" required placeholder="Name">
+                <input type="email" name="email" autocomplete="on"  required placeholder="Email">
+                <div class="mt-1">
+                <button class="hover1 text-center w-100" type="submit">subscribe</button>
+                </div>
+              </form>
+              <!-- <div class="validation"></div> -->
+              <div class="h-100">
+                <div class="d-flex text-center flex-column ">
+                  <h3>Start Your Construction Journey with Us!</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur vulputate non purus
+                  </p>
+                  <div class="pt-1">
+                    <a href="#" class="hover1">get started now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <div>
+                  <h4>Latest Posts</h4>
+                  <hr>
+                </div>
+                <div>
+                  <div class="d-flex pt-3  gap-4 align-items-center">
+                    <figure>
+                      <img src="assets/images/index/single-post- 1.png" alt="">
+                    </figure>
+                    <p>Discussion About Projects With Our Teammates</p>
+                  </div>
+                  <div class="d-flex  pt-3  gap-4 align-items-center">
+                    <figure>
+                      <img src="./assets/images/index/single-post-2.png" alt="">
+                    </figure>
+                    <p>Good Practices & Ideas For Construction Project</p>
+                  </div>
+                  <div class="d-flex pt-3 gap-4 align-items-center ">
+                    <figure>
+                      <img src="assets/images/index/single-post-3.png" alt="">
+                    </figure>
+                    <p>We Are Best In Engineering & Construction Project</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-7 ">
+            <div class="d-flex flex-column ">
+              <figure>
+                <img class="w-100" src="assets/images/index/latest-post.png">
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit.
+              </p>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt nostrum exercitationem ullam corporis mollit anim id
+                est laborum.
+              </p>
+              <div class="d-flex gap-4">
+                <figure>
+                  <img class="h-100" src="assets/images/index/latest-post1.png" alt="">
+                </figure>
+                <div>
+                  <p class="mb-4">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo.
+                  </p>
+                  <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+                    quia dolor sit amet, consectetur, adipisci velit.
+                  </p>
+                </div>
+              </div>
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga. Et harum
+                quidem rerum facilis est et expedita distinctio.
+              </p>
+              <p>
+                Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                nihil impedit quo minus id quod maxime placeat facere
+                possimus, omnis voluptas assumenda est, omnis dolor
+                repellendus. Temporibus autem quibusdam et aut officiis
+                debitis aut rerum necessitatibus saepe eveniet ut et
+                voluptates repudiandae sint et molestiae non recusandae.
+                Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+                reiciendis voluptatibus maiores alias consequatur aut
+                perferendis doloribus asperiores repellat.
+              </p>
+              <hr>
+              <form class="Subscribe-massage" action="#" >
+                <h3>Add Comment :</h3>
+                <textarea required autofocus rows="10" cols="5" name="Comment"></textarea>
+                <div class="d-flex gap-3">
+                  <input  type="text" name="name" autocomplete="on" required placeholder="Name">
+                  <input type="email" name="email" autocomplete="on" required placeholder="Email">
+                </div>
+                <div class="pt-4">
+                <button class="hover1" type="submit">Submit</button>
+                </div>
+              </form>
+              <!-- <div  class="validation"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  End of 9.2. Post-latest section  -->
+    <!--  footer section  -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="p-0 d-flex justify-content-between align-items-center">
+            <div>
+              <h3>Subscribe Our News Letter</h3>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut.
+              </p>
+            </div>
+            <div class="d-flex">
+              <form class="d-flex justify-content-center Subscribe-massage" action="#"  >
+                <input type="email" name="email" autocomplete="on" required placeholder="Type Your Email">
+                <button type="submit">Subscribe</button>
+              </form>
+              <div class="validation Succes-box"></div>
+            </div>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between p-0">
+            <div class="d-flex flex-column gap-3">
+              <a href="index.html">
+                <img src="assets/images/footer_Logo.svg" alt="logo">
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                In vitae turpis massa sed elementum
+              </p>
+            </div>
+            <div class="Footer_Links d-flex justify-content-evenly">
+              <ul class="d-flex flex-column justify-content-between ">
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="About.html">Our Mission</a></li>
+                <li><a href="Contact.html">Career</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+              </ul>
+              <hr>
+              <ul class="d-flex flex-column justify-content-between">
+                <li><a href="Contact.html">How it works</a></li>
+                <li><a href="Faqs.html">FAQs</a></li>
+                <li><a href="Team.html">Teams</a></li>
+                <li><a href="Blog.html">News & Blogs</a></li>
+              </ul>
+              <hr>
+              <ul class="d-flex flex-column justify-content-between">
+                <li><a href="Contact.html">Help Centre</a></li>
+                <li><a href="About.html">Privacy Policy</a></li>
+                <li><a href="About.html">Reviews</a></li>
+                <li><a href="Blog.html">News & Blogs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Copyright d-flex justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between">
+          <div class="d-flex gap-3">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="d-flex align-items-center">
+            <p class="w-100 text-center">
+              Copyright &copy 2023 Blogs & News By Evonicmedia. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  End of footer section  -->
+  </div>
+ <!-- bootstrap min javascript -->
+ <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+ <!-- j Query -->
+ <script src="assets/js/jquery.js"></script>
+ <!-- slick slider js -->
+ <script src="assets/js/slick.min.js"></script>
+ <!-- main javascript -->
+ <script src="assets/js/custom.js"></script>
+ <script src="assets/js/aos.js"></script>
+ <script>
+   AOS.init({
+     once: true,
+     duration: 1500,
+   });
+ </script>
+</body>
+
+</html>
