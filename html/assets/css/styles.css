@@ -317,6 +317,8 @@ iframe {
   transform: scale(1);
   color: #0b132b !important;
 }
+ 
+/* vertical text  */
 
 .vertical {
   position: absolute;
@@ -343,7 +345,7 @@ iframe {
   transform: rotate(180deg);
   color: #0b132b;
 }
-
+/* form validation message */
 .validation {
   position: fixed;
   background-color: #CAF0F8;
@@ -383,6 +385,8 @@ iframe {
   text-align: center;
   color: #0B132B;
 }
+
+/* scrolbar to top */
 
 #scrollTopBtn {
   position: fixed;
